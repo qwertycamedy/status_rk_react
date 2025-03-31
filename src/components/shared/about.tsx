@@ -6,10 +6,10 @@ export const About = () => {
       <Container>
         <div className="flex flex-col lg:flex-row items-start justify-between mb-[40px] lg:mb-[82px]">
           <Title as={"h2"}>О компании</Title>
-          <div className="max-w-[768px] w-full mt-[20px] lg:mt-[45px] font-semibold">
+          <div className="max-w-[768px] w-full mt-[20px] lg:mt-[45px] font-semibold text-[rgba(0,0,0,.79)]">
             <p className={"text-[16px] lg:text-[28px] mb-[22px] lg:mb-[68px]"}>
-              Компания &quot;Status RK&quot; представляет собой одну из ведущих
-              компаний на рынке рекламных услуг, объединяющего креативность и
+              Компания "Status RK" представляет собой одну из ведущих компаний
+              на рынке рекламных услуг, объединяющая креативность и
               высококачественное производство.
             </p>
             <p className="text-[14px] lg:text-[20px]">

@@ -9,7 +9,7 @@ const items = [
   {
     img: "/assets/img/adv_2.svg",
     title: "Высокое качество услуг",
-    text: "Использование современных технологий гарантирует отличный результат в дизайне, полиграфии и сувенирной продукции.",
+    text: "Отличный результат в дизайне, производстве световых инсталляций, полиграфии и сувенирной продукции",
   },
   {
     img: "/assets/img/adv_3.svg",
@@ -30,7 +30,11 @@ const items = [
 
 export const Advantages = () => {
   return (
-    <section className="pt-[60px] lg:pt-[80px]" id={"advantages"} data-aos="fade-up">
+    <section
+      className="pt-[60px] lg:pt-[80px]"
+      id={"advantages"}
+      data-aos="fade-up"
+    >
       <Container>
         <div className="flex flex-col lg:flex-row items-start justify-between mb-[20px] lg:mb-[40px]">
           <Title as={"h2"}>Преимущества</Title>
@@ -54,7 +58,9 @@ export const Advantages = () => {
                 <h3 className="text-[16px] lg:text-[20px] font-semibold leading-[105%] mb-[8px] lg:mb-[14px]">
                   {item.title}
                 </h3>
-                <p className="text-[12px] lg:text-[15px]">{item.text}</p>
+                <p className="text-[12px] lg:text-[15px] text-[rgba(0,0,0,0.7)]">
+                  {item.text}
+                </p>
               </div>
             ))}
         </div>

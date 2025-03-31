@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { Container, Title } from "../ui";
 import { WorksSlider } from "./works_slider";
 import { Swiper as SwiperType } from "swiper";
-import { WorksNav } from "./works_nav";
+import { SliderNav } from "./slider_nav";
 
 export const Works = () => {
   const swiperRef = useRef<SwiperType | null>(null);
@@ -12,7 +12,7 @@ export const Works = () => {
       <Container>
         <div className="flex items-center justify-between mb-[22px] lg:mb-[40px]">
           <Title as={"h2"}>Примеры работ</Title>
-          <WorksNav swiperRef={swiperRef} />
+          <SliderNav swiperRef={swiperRef} />
         </div>
       </Container>
       <WorksSlider swiperRef={swiperRef} />

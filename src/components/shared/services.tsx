@@ -2,8 +2,11 @@ import { Container, Title } from "../ui";
 
 export const Services = () => {
   return (
-    <section className="pt-[60px] lg:pt-[80px]" id="services" 
-    data-aos="fade-up">
+    <section
+      className="pt-[60px] lg:pt-[80px]"
+      id="services"
+      data-aos="fade-up"
+    >
       <Container>
         <div className="flex flex-col lg:flex-row items-start justify-between mb-[20px] lg:mb-[40px]">
           <Title as={"h2"}>Наши услуги</Title>
@@ -15,6 +18,21 @@ export const Services = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between gap-4">
+          <div className="flex flex-col items-center justify-center p-[28px] lg:px-[38px] lg:py-[28px] w-full border border-[#ccc] rounded-[28px]">
+            <Title
+              className="w-full max-w-full mb-[22px] lg:mb-[28px] font-semibold flex-1"
+              as={"h4"}
+            >
+              Световые вывески
+            </Title>
+            <p className="w-full max-w-full leading-[177%] font-semibold">
+              Световые вывески — яркий и надёжный способ выделить ваш бизнес.
+              Изготавливаем лайтбоксы, объёмные буквы, неон и другие решения под
+              ваш стиль. Работаем “под ключ”: замер, дизайн, монтаж, поддержка.
+              Качественные материалы и технологии — для яркости, долговечности и
+              безопасности.
+            </p>
+          </div>
           <div className="flex flex-col items-center justify-center p-[28px] lg:px-[38px] lg:py-[28px] w-full border border-[#ccc] rounded-[28px]">
             <Title
               className="w-full max-w-full mb-[22px] lg:mb-[28px] font-semibold flex-1"

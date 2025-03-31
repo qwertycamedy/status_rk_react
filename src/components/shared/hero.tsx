@@ -5,7 +5,7 @@ export const Hero = () => {
     <section className="pb-[72px]">
       <div className="pt-[150px] mb-5 xl:pt-[218px] pb-[20px] xl:pb-0 rounded-b-[28px] lg:rounded-b-[58px] bg-gradient-to-t from-[rgba(255,255,255,0.08)] to-transparent overflow-hidden">
         <Container>
-          <Title as={"h1"}>Делаем ваш бренд заметным</Title>
+          <Title as={"h1"}>Ваш верный партнер</Title>
         </Container>
       </div>
       <Container className="flex items-center justify-center flex-col animate-show">
@@ -16,7 +16,7 @@ export const Hero = () => {
           </li>
           <li className="flex gap-2">
             <span className="mt-[4px] bg-[#fff] rounded-full min-w-[11px] w-[11px] h-[11px] lg:w-[13px] lg:h-[12px]" />
-            <span>Рекламное агентство полного цикла</span>
+            <span>Рекламная компания полного цикла</span>
           </li>
         </ul>
         <div className="max-w-[350px] flex flex-col items-center justify-center gap-[17px] lg:gap-[26px]">

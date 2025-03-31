@@ -16,6 +16,10 @@ const navLinks = [
     text: "Примеры работ",
   },
   {
+    href: "/#partners",
+    text: "Партнеры",
+  },
+  {
     href: "/#contacts",
     text: "Контакты",
   },
@@ -51,7 +55,7 @@ export const Header = () => {
             {navLinks.map((link, i) => (
               <li className="w-full lg:w-auto" key={i}>
                 <MyLink
-                  className="w-full lg:w-auto border-[#fff1] lg:border-[#fff]"
+                  className="w-full lg:w-auto border-[#fff1] lg:border-[#fff] text-nowrap"
                   variant="border"
                   href={link.href}
                   onClick={onBurger}

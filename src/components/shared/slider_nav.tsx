@@ -1,13 +1,13 @@
 import { RefObject } from "react";
 import { Swiper as SwiperType } from "swiper";
 
-export const WorksNav = ({
+export const SliderNav = ({
   swiperRef,
 }: {
   swiperRef: RefObject<SwiperType | null>;
 }) => {
   return (
-    <div className="flex gap-[22px]">
+    <div className="hidden lg:flex gap-[22px]">
       <button
         className="flex items-center justify-center text-black bg-transparent w-[80px] h-[80px] rounded-full border-2 border-[#ccc] cursor-pointer"
         onClick={() => swiperRef.current?.slidePrev()}

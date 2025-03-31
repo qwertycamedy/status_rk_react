@@ -9,6 +9,6 @@ export { Partners } from "./partners";
 export { Feedback } from "./feedback";
 export { Footer } from "./footer";
 //components
+export { SliderNav } from "./slider_nav";
 export { WorksSlider } from "./works_slider";
-export { WorksNav } from "./works_nav";
 export { FeedbackForm } from "./feedback_form";
