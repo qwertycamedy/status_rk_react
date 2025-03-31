@@ -23,7 +23,7 @@ export const Services = () => {
               className="w-full max-w-full mb-[22px] lg:mb-[28px] font-semibold flex-1"
               as={"h4"}
             >
-              Световые вывески
+              Световые<br/>вывески
             </Title>
             <p className="w-full max-w-full leading-[177%] font-semibold">
               Световые вывески — яркий и надёжный способ выделить ваш бизнес.
@@ -38,7 +38,7 @@ export const Services = () => {
               className="w-full max-w-full mb-[22px] lg:mb-[28px] font-semibold flex-1"
               as={"h4"}
             >
-              Полиграфические услуги
+              Полиграфические<br/>услуги
             </Title>
             <p className="w-full max-w-full leading-[177%] font-semibold">
               Полный спектр печатной продукции для эффективного продвижения
@@ -53,7 +53,7 @@ export const Services = () => {
               className="w-full max-w-full mb-[22px] lg:mb-[28px] font-semibold flex-1"
               as={"h4"}
             >
-              Услуги дизайнера
+              Услуги<br/>дизайнера
             </Title>
             <p className="w-full max-w-full leading-[177%] font-semibold">
               Комплексные дизайнерские решения для Вашего бизнеса: от разработки
@@ -68,7 +68,7 @@ export const Services = () => {
               className="w-full max-w-full mb-[22px] lg:mb-[28px] font-semibold flex-1"
               as={"h4"}
             >
-              Сувенирная продукция
+              Сувенирная<br/>продукция
             </Title>
             <p className="w-full max-w-full leading-[177%] font-semibold">
               Широкий выбор корпоративных сувениров для усиления узнаваемости
