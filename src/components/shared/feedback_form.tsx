@@ -21,7 +21,7 @@ export const FeedbackForm = () => {
     setStatus(loadStatus.loading);
 
     try {
-      const response = await fetch("/api/send-message", {
+      const response = await fetch("backendApiUrl", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
