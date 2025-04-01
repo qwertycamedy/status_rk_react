@@ -49,9 +49,6 @@ const works = [
     img: "/assets/img/WhatsApp Image 2025-02-08 at 13.09.40 (1).jpeg",
   },
   {
-    img: "/assets/img/WhatsApp Image 2025-02-08 at 13.09.40 (1).jpeg",
-  },
-  {
     img: "/assets/img/WhatsApp Image 2025-02-08 at 13.09.40 (2).jpeg",
   },
   {
