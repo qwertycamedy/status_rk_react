@@ -1,4 +1,5 @@
 <?php
+
 // Включаем CORS, если форма размещена на другом домене
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
@@ -21,9 +22,9 @@ $tel = htmlspecialchars($data['tel']);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
+require './PHPMailer/Exception.php';
+require './PHPMailer/PHPMailer.php';
+require './PHPMailer/SMTP.php';
 
 $mail = new PHPMailer(true);
 
@@ -36,6 +37,8 @@ try {
     $mail->Password = 'uav!*2R4ww'; // замените
     $mail->SMTPSecure = 'ssl'; // SSL
     $mail->Port = 465;
+
+    $mail->CharSet = 'UTF-8';
 
     $mail->setFrom('info@statusrk.kz', 'Сайт statusrk.kz');
     $mail->addAddress('info@statusrk.kz');
