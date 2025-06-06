@@ -1,6 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { Button, Input, Label } from "../ui";
 import { clsx } from "clsx";
+import axios from "axios";
 
 const loadStatus = {
   loading: "loading",
@@ -20,14 +21,17 @@ export const FeedbackForm = () => {
     e.preventDefault();
     setStatus(loadStatus.loading);
 
-    try {
-      const response = await fetch("backendApiUrl", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+    const config = { headers: { "Content-Type": "application/json" } };
 
-      const result = await response.json();
+    try {
+      const response = await axios.post(
+        "https://statusrk.kz/backend/send-feedback.php",
+        formData,
+        config
+      );
+
+      const result = response.data;
+
       if (result.success) {
         setStatus(loadStatus.success);
         setFormData({ name: "", email: "", tel: "" });
@@ -40,6 +44,9 @@ export const FeedbackForm = () => {
       }
     } catch (e) {
       setStatus(loadStatus.error);
+      setTimeout(() => {
+        setStatus(null);
+      }, 2000);
       console.log("error submit: ", e);
     }
   };
@@ -48,6 +55,7 @@ export const FeedbackForm = () => {
     <form
       className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 lg:gap-5"
       onSubmit={onSubmit}
+      autoComplete="off"
     >
       <Label label="Ваше имя">
         <Input
@@ -55,6 +63,7 @@ export const FeedbackForm = () => {
           name="name"
           value={formData.name}
           onChange={onChange}
+          autoComplete="off"
           placeholder="Как к вам обращаться?"
           required
           className="w-full p-2 border rounded"
@@ -66,6 +75,7 @@ export const FeedbackForm = () => {
           name="email"
           value={formData.email}
           onChange={onChange}
+          autoComplete="off"
           placeholder="Ваш E-mail"
           required
           className="w-full p-2 border rounded"
@@ -77,6 +87,7 @@ export const FeedbackForm = () => {
           name="tel"
           value={formData.tel}
           onChange={onChange}
+          autoComplete="off"
           placeholder="+7 XXX XXX XX XX"
           required
           className="w-full p-2 border rounded"
